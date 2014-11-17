@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dip" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="99dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:contentDescription="@string/action_settings"
+        android:scaleType="centerCrop"
+        android:src="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/rss_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rss_item_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="14dp"
+        android:background="@color/gray_q" />
+
+    <TextView
+        android:id="@+id/rss_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

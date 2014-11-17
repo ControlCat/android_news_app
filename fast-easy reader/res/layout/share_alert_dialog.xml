@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/favorite_blue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/share_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:ems="10"
+        android:hint="@string/share_hint_text"
+        android:padding="3dp"
+        android:gravity="top"
+        android:textSize="16sp" >
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/share_btn_ok"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/alert_btn_selector"
+            android:text="@string/ok_text" />
+
+        <Button
+            android:id="@+id/share_btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/alert_btn_selector"
+            android:text="@string/cancel_text" />
+    </LinearLayout>
+
+</LinearLayout>
